@@ -1,13 +1,13 @@
 
 ## Opracować zestaw programów typu producent-konsument realizujących przy wykorzystaniu mechanizmu semaforów 
-i pamięci dzielonej, następujący schemat komunikacji międzyprocesowej: 
+## i pamięci dzielonej, następujący schemat komunikacji międzyprocesowej: 
 
 * Proces 1: czyta dane (pojedyncze wiersze) ze standardowego strumienia wejściowego i przekazuje je 
 w niezmienionej formie do procesu 2.
 * Proces 2: pobiera dane przesłane przez proces 1. Oblicza ilość znaków w każdej linii i wyznaczoną
 liczbę przekazuje do procesu 3. 
 * Proces 3: pobiera dane wyprodukowane przez proces 2 i umieszcza je w standardowym strumieniu 
-wyjściowym. Każda odebrana jednostka danych powinna zostać wyprowadzona w osob-
+wyjściowym. Każda odebrana jednostka danych powinna zostać wyprowadzona w osob
 nym wierszu. 
 
 ### II. Należy zaproponować i zaimplementować mechanizm informowania się procesów o swoim stanie. 
