@@ -1,6 +1,5 @@
 
-## Opracować zestaw programów typu producent-konsument realizujących przy wykorzystaniu mechanizmu semaforów 
-## i pamięci dzielonej, następujący schemat komunikacji międzyprocesowej: 
+## Opracować zestaw programów typu producent-konsument realizujących przy wykorzystaniu mechanizmu semaforów i pamięci dzielonej, następujący schemat komunikacji międzyprocesowej: 
 
 * Proces 1: czyta dane (pojedyncze wiersze) ze standardowego strumienia wejściowego i przekazuje je 
 w niezmienionej formie do procesu 2.
