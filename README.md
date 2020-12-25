@@ -1,6 +1,6 @@
 
-## Opracować zestaw programów typu producent-konsument realizujących przy wykorzystaniu mechani-
-zmu semaforów i pamięci dzielonej, następujący schemat komunikacji międzyprocesowej: 
+## Opracować zestaw programów typu producent-konsument realizujących przy wykorzystaniu mechanizmu semaforów 
+i pamięci dzielonej, następujący schemat komunikacji międzyprocesowej: 
 
 * Proces 1: czyta dane (pojedyncze wiersze) ze standardowego strumienia wejściowego i przekazuje je 
 w niezmienionej formie do procesu 2.
@@ -29,10 +29,11 @@ procesy. Powinien wobec tego wysłać do nich sygnał (S4) oraz przekazać infor
 przekazując im stosowny komunikat (lub komunikaty) poprzez mechanizm sygnałów i kolejek komunikatów.
 Procesy odbierające sygnał S4, powinny odczytać skierowany do nich komunikat (lub komunikaty) w procedurze odbierania sy-
 gnału S4. Wszystkie trzy procesy powinny zareagować zgodnie z żądaniem operatora. 
-Sygnały oznaczone w opisie zadania symbolami S1 ÷ S4 naleŜy wybrać samodzielnie spośród dostępnych w systemie (np. 
+Sygnały oznaczone w opisie zadania symbolami S1 ÷ S4 należy wybrać samodzielnie spośród dostępnych w systemie (np. 
 SIGUSR1, SIGUSR2, SIGINT, SIGCONT).
 UWAGA: 
-Wszelkie wątpliwości związane z treścią zadania należy wyjaśniać z prowadzącym zajęcia laboratoryjne.```c
+Wszelkie wątpliwości związane z treścią zadania należy wyjaśniać z prowadzącym zajęcia laboratoryjne.
+```c
 
  #include <sys/types.h>
  #include <sys/ipc.h>
