@@ -9,27 +9,31 @@ liczbę przekazuje do procesu 3.
 wyjściowym. Każda odebrana jednostka danych powinna zostać wyprowadzona w osob
 nym wierszu. 
 
-### II. Należy zaproponować i zaimplementować mechanizm informowania się procesów o swoim stanie. 
-Należy wykorzystać do tego dostępny mechanizm sygnałów i kolejek komunikatów. Wszystkie trzy 
-procesy powinny być powoływane automatycznie z jednego procesu inicjującego. 
+### Należy zaproponować i zaimplementować mechanizm informowania się procesów o swoim stanie. 
+
+Należy wykorzystać do tego dostępny mechanizm sygnałów i kolejek komunikatów. 
+Wszystkie trzy procesy powinny być powoływane automatycznie z jednego procesu inicjującego. 
 Należy zaimplementować mechanizm asynchronicznego przekazywania informacji pomiędzy operatorem a procesami 
 oraz pomiędzy procesami. Wykorzystać do tego dostępny mechanizm sygnałów i kolejek komunikatów. 
 
-### Operator może wysłać do dowolnego procesu sygnał zakończenia działania (S1), sygnał wstrzymania działania (S2) i 
+Operator może wysłać do dowolnego procesu sygnał zakończenia działania (S1), sygnał wstrzymania działania (S2) i 
 sygnał wznowienia działania (S3). Sygnał S2 powoduje wstrzymanie synchronicznej wymiany danych pomiędzy procesami. 
 Sygnał S3 powoduje wznowienie tej wymiany. Sygnał S1 powoduje zakończenie działania oraz zwolnienie wszelkich wykorzy-
 stywanych przez procesy zasobów. 
 
-### Każdy z sygnałów przekazywany jest przez operatora tylko do jednego, dowolnego procesu. O tym, do którego proce-
+Każdy z sygnałów przekazywany jest przez operatora tylko do jednego, dowolnego procesu. O tym, do którego proce-
 su wysłać sygnał, decyduje operator, a nie programista. Każdy z sygnałów operator może wysłać do innego procesu. Mimo, że 
 operator kieruje sygnał do jednego procesu, to pożądane przez operatora działanie musi zostać zrealizowane przez wszystkie 
 trzy procesy. W związku z tym, proces odbierający sygnał od operatora musi powiadomić o przyjętym żądaniu pozostałe dwa 
 procesy. Powinien wobec tego wysłać do nich sygnał (S4) oraz przekazać informację o tym jakiego działania wymaga operator, 
 przekazując im stosowny komunikat (lub komunikaty) poprzez mechanizm sygnałów i kolejek komunikatów.
 Procesy odbierające sygnał S4, powinny odczytać skierowany do nich komunikat (lub komunikaty) w procedurze odbierania sy-
-gnału S4. Wszystkie trzy procesy powinny zareagować zgodnie z żądaniem operatora. 
+gnału S4.
+
+Wszystkie trzy procesy powinny zareagować zgodnie z żądaniem operatora. 
 Sygnały oznaczone w opisie zadania symbolami S1 ÷ S4 należy wybrać samodzielnie spośród dostępnych w systemie (np. 
 SIGUSR1, SIGUSR2, SIGINT, SIGCONT).
+
 UWAGA: 
 Wszelkie wątpliwości związane z treścią zadania należy wyjaśniać z prowadzącym zajęcia laboratoryjne.
 ```c
