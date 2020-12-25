@@ -1,6 +1,5 @@
-# militaryuniversityoftechnology
-Long long time ago
-##Opracować zestaw programów typu producent - konsument realizujących przy wykorzystaniu mechani-
+
+## Opracować zestaw programów typu producent - konsument realizujących przy wykorzystaniu mechani-
 
 zmu semaforów i pamięci dzielonej, następujący schemat komunikacji międzyprocesowej: 
 
