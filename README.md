@@ -1,5 +1,4 @@
-Dawno dawno temu znalezione ile to lat...
-Taki kod klepałem w 2011...
+
 
 # Projekt zaliczeniowy z systemów operacyjnych.
 
